@@ -115,16 +115,29 @@
         // // 6.	Genera un arreglo con todos los divisores de un número dado.
 
         // // Respuesta:
-        let n = Number(prompt("Ingresa un número para obtener sus divisores:"));
-        let res = [];
+        // let n = Number(prompt("Ingresa un número para obtener sus divisores:"));
+        // let res = [];
+
+        // for (let i = 1; i <= n; i++) {
+        //     if (n % i === 0) {
+        //         res.push(i);
+        //     }
+        // }
+
+        // console.log("Divisores de " + n + ":  [" + res.join(", ") + "]");
+
+        // //------------------------------------------------------------------------//
+        // // 7.	Dado un número n, calcula su factorial (es decir, n!).
+
+        // // Respuesta:
+        let n = Number(prompt("Ingresa un número para calcular su factorial:"));
+        let res = 1;
 
         for (let i = 1; i <= n; i++) {
-            if (n % i === 0) {
-                res.push(i);
-            }
+            res = res * i;  // multiplicación acumulada
         }
 
-        console.log("Divisores de " + n + ":  [" + res.join(", ") + "]");
+        console.log("El factorial de " + n + " es: " + res);
 
 
     </script>
