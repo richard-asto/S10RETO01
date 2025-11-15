@@ -173,20 +173,37 @@
         // // ];
 
         // // Respuesta:
-        let boletos = [
-            { edad: 8, precio: 5 },
-            { edad: 15, precio: 10 },
-            { edad: 70, precio: 7 },
-            { edad: 12, precio: 10 },
-            { edad: 5, precio: 5 }
-        ];
-        let total = 0;
+        // let boletos = [
+        //     { edad: 8, precio: 5 },
+        //     { edad: 15, precio: 10 },
+        //     { edad: 70, precio: 7 },
+        //     { edad: 12, precio: 10 },
+        //     { edad: 5, precio: 5 }
+        // ];
+        // let total = 0;
 
-        for (let i = 0; i < boletos.length; i++) {
-            total += boletos[i].precio;
+        // for (let i = 0; i < boletos.length; i++) {
+        //     total += boletos[i].precio;
+        // }
+
+        // console.log("Total ganado:", total);
+
+        // // ------------------------------------------------------------------------//
+        // // 10.	En una lista de palabras, el bibliotecario necesita saber cuál es
+        // //  la palabra más larga en el archivo. Ayúdale a encontrarla.
+        // // let palabras = ["manzana", "banana", "cereza", "uva", "fresa"];
+
+        // // Respuesta:
+        let palabras = ["manzana", "banana", "cereza", "uva", "fresa", "chirimoya"];
+        let mayor = palabras[0];
+
+        for (let i = 1; i < palabras.length; i++) {
+            if (palabras[i].length > mayor.length) {
+                mayor = palabras[i];
+            }
         }
 
-        console.log("Total ganado:", total);
+        console.log("La palabra más larga es:", mayor);
 
 
     </script>
