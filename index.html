@@ -88,28 +88,44 @@
         // // 5.	Dado un arreglo de números, encuentra el índice del número menor.
 
         // // Respuesta:
-        let numeros2 = [];
-        let valor = prompt("Ingresa un número (vacío para terminar):");
+        // let numeros2 = [];
+        // let valor = prompt("Ingresa un número (vacío para terminar):");
 
-        // Capturar los elementos del arreglo
-        while (valor !== "") {
-            numeros2.push(Number(valor));
-            valor = prompt("Ingresa otro número (vacío para terminar):");
-        }
+        // // Capturar los elementos del arreglo
+        // while (valor !== "") {
+        //     numeros2.push(Number(valor));
+        //     valor = prompt("Ingresa otro número (vacío para terminar):");
+        // }
 
-        let menor = numeros2[0];
-        let indiceMenor = 0;
+        // let menor = numeros2[0];
+        // let indiceMenor = 0;
 
-        for (let i = 1; i < numeros2.length; i++) {
-            if (numeros2[i] < menor) {
-                menor = numeros2[i];
-                indiceMenor = i;
+        // for (let i = 1; i < numeros2.length; i++) {
+        //     if (numeros2[i] < menor) {
+        //         menor = numeros2[i];
+        //         indiceMenor = i;
+        //     }
+        // }
+
+        // console.log("Arreglo ingresado:", numeros2);
+        // console.log("Número menor:", menor);
+        // console.log("Índice del número menor:", indiceMenor);
+
+        // //------------------------------------------------------------------------//
+        // // 6.	Genera un arreglo con todos los divisores de un número dado.
+
+        // // Respuesta:
+        let n = Number(prompt("Ingresa un número para obtener sus divisores:"));
+        let res = [];
+
+        for (let i = 1; i <= n; i++) {
+            if (n % i === 0) {
+                res.push(i);
             }
         }
 
-        console.log("Arreglo ingresado:", numeros2);
-        console.log("Número menor:", menor);
-        console.log("Índice del número menor:", indiceMenor);
+        console.log("Divisores de " + n + ":  [" + res.join(", ") + "]");
+
 
     </script>
 </body>
