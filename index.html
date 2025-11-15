@@ -279,27 +279,55 @@
         // // ];
 
         // // Respuesta:
-        let productos = [
-            { nombre: "Televisor", precio: 150 },
-            { nombre: "Celular", precio: 80 },
-            { nombre: "Laptop", precio: 120 },
-            { nombre: "Audífonos", precio: 50 }
+        // let productos = [
+        //     { nombre: "Televisor", precio: 150 },
+        //     { nombre: "Celular", precio: 80 },
+        //     { nombre: "Laptop", precio: 120 },
+        //     { nombre: "Audífonos", precio: 50 }
+        // ];
+
+        // let totalDescuento = 0; // acumulador básico
+
+        // for (let i = 0; i < productos.length; i++) {
+        //     let precio = productos[i].precio;
+
+        //     // si el precio es mayor a 100, aplicar 10% de descuento
+        //     if (precio > 100) {
+        //         precio = precio * 0.9;
+        //     }
+
+        //     totalDescuento = totalDescuento + precio; // sumar al total
+        // }
+
+        // console.log("Total con descuento:", totalDescuento);
+
+// //------------------------------------------------------------------------//
+        // // 14.	Un vendedor de boletos tiene que contar cuántos boletos ha vendido
+        // //  en diferentes tipos de categorías: adulto, niño y senior. El precio de
+        // //  los boletos varía según la categoría. Ayúdanos a calcular el total
+        // //  recaudado por cada tipo.
+        // // let boletos = [
+        // // { categoria: "adulto", cantidad: 10, precio: 20 },
+        // // { categoria: "niño", cantidad: 15, precio: 10 },
+        // // { categoria: "senior", cantidad: 5, precio: 15 }
+        // // ];
+
+        // // Respuesta:
+        let boletos = [
+            { categoria: "adulto", cantidad: 10, precio: 20 },
+            { categoria: "niño", cantidad: 15, precio: 10 },
+            { categoria: "senior", cantidad: 5, precio: 15 }
         ];
 
-        let totalDescuento = 0; // acumulador básico
+        for (let i = 0; i < boletos.length; i++) {
+            let categoria = boletos[i].categoria;
+            let cantidad = boletos[i].cantidad;
+            let precio = boletos[i].precio;
 
-        for (let i = 0; i < productos.length; i++) {
-            let precio = productos[i].precio;
+            let total = cantidad * precio;
 
-            // si el precio es mayor a 100, aplicar 10% de descuento
-            if (precio > 100) {
-                precio = precio * 0.9;
-            }
-
-            totalDescuento = totalDescuento + precio; // sumar al total
+            console.log(categoria + ": $" + total);
         }
-
-        console.log("Total con descuento:", totalDescuento);
 
 
     </script>
