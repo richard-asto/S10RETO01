@@ -194,16 +194,43 @@
         // // let palabras = ["manzana", "banana", "cereza", "uva", "fresa"];
 
         // // Respuesta:
-        let palabras = ["manzana", "banana", "cereza", "uva", "fresa", "chirimoya"];
-        let mayor = palabras[0];
+        // let palabras = ["manzana", "banana", "cereza", "uva", "fresa", "chirimoya"];
+        // let mayor = palabras[0];
 
-        for (let i = 1; i < palabras.length; i++) {
-            if (palabras[i].length > mayor.length) {
-                mayor = palabras[i];
+        // for (let i = 1; i < palabras.length; i++) {
+        //     if (palabras[i].length > mayor.length) {
+        //         mayor = palabras[i];
+        //     }
+        // }
+
+        // console.log("La palabra más larga es:", mayor);
+
+        // //------------------------------------------------------------------------//
+        // // 11.	Un coleccionista tiene una caja con varias cartas. Algunas cartas
+        // //  están numeradas del 1 al 10, pero hay algunas cartas repetidas.
+        // //  ¿Cuántas cartas únicas tiene en total?
+        // // let cartas = [1, 2, 3, 4, 2, 3, 5, 6, 7, 8, 1, 9, 10, 10];
+
+        // // Respuesta:
+        let cartas = [1, 2, 3, 4, 2, 3, 5, 6, 7, 8, 1, 9, 10, 10, 11];
+        let unicas = [];
+
+        for (let i = 0; i < cartas.length; i++) {
+            let repetida = false;
+
+            for (let j = 0; j < unicas.length; j++) {
+                if (cartas[i] === unicas[j]) {
+                    repetida = true;
+                    break;
+                }
+            }
+
+            if (!repetida) {
+                unicas[unicas.length] = cartas[i];
             }
         }
 
-        console.log("La palabra más larga es:", mayor);
+        console.log("Cartas únicas:", unicas.length);
 
 
     </script>
