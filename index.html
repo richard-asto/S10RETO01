@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reto Semana 10</title>
 </head>
+
 <body>
     <h1>⚡ Reto Semana 10 ⚡</h1>
     <script>
@@ -31,17 +33,43 @@
         // //  la concatenación de todas las palabras capturadas.
 
         // // Respuesta:
-        let palabras = [];
-        let palabra = prompt("Ingresa una palabra (enter para terminar):");
+        // let palabras = [];
+        // let palabra = prompt("Ingresa una palabra (enter para terminar):");
 
-        while (palabra !== "") {
-            palabras.push(palabra);
-            palabra = prompt("Ingresa otra palabra (enter para terminar):");
+        // while (palabra !== "") {
+        //     palabras.push(palabra);
+        //     palabra = prompt("Ingresa otra palabra (enter para terminar):");
+        // }
+
+        // console.log("Concatenación:", palabras.join(" "));
+
+        // //------------------------------------------------------------------------//
+        // // 3.	Dado un arreglo, invierte el orden de sus elementos
+
+        // // Respuesta:
+        let arr = [];
+        let valor;
+
+        // Pedir elementos al usuario
+        valor = prompt("Ingresa un valor para el arreglo (vacío para terminar):");
+
+        while (valor !== "") {
+            arr.push(valor);
+            valor = prompt("Ingresa otro valor (vacío para terminar):");
         }
 
-        console.log("Concatenación:", palabras.join(" "));
+        // Invertir el arreglo sin usar reverse()
+        let invertido = [];
+
+        for (let i = arr.length - 1; i >= 0; i--) {
+            invertido.push(arr[i]);
+        }
+
+        console.log("Arreglo original:", arr);
+        console.log("Arreglo invertido:", invertido);
 
 
     </script>
 </body>
+
 </html>
