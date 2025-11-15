@@ -246,25 +246,60 @@
         // // ];
 
         // // Respuesta:
-        let registros = [
-            { entrada: 8, salida: 17 },
-            { entrada: 9, salida: 17 },
-            { entrada: 8, salida: 15 },
-            { entrada: 7, salida: 18 },
-            { entrada: 10, salida: 20 }
+        // let registros = [
+        //     { entrada: 8, salida: 17 },
+        //     { entrada: 9, salida: 17 },
+        //     { entrada: 8, salida: 15 },
+        //     { entrada: 7, salida: 18 },
+        //     { entrada: 10, salida: 20 }
+        // ];
+
+        // let masDe8 = 0; // contador básico
+
+        // for (let i = 0; i < registros.length; i++) {
+        //     let horas = registros[i].salida - registros[i].entrada;
+
+        //     if (horas > 8) {
+        //         masDe8 = masDe8 + 1; // sumar uno
+        //     }
+        // }
+
+        // console.log("Empleados que trabajaron más de 8 horas:", masDe8);
+
+        // //------------------------------------------------------------------------//
+        // // 13.	En una tienda de electrónicos, tienes una lista de productos con
+        // //  sus precios. La tienda está dando un descuento de 10% a todos los
+        // //  productos cuyo precio sea mayor a 100. ¿Cuánto sería el total después
+        // //  del descuento para todos los productos?
+        // // let productos = [
+        // // { nombre: "Televisor", precio: 150 },
+        // // { nombre: "Celular", precio: 80 },
+        // // { nombre: "Laptop", precio: 120 },
+        // // { nombre: "Audífonos", precio: 50 }
+        // // ];
+
+        // // Respuesta:
+        let productos = [
+            { nombre: "Televisor", precio: 150 },
+            { nombre: "Celular", precio: 80 },
+            { nombre: "Laptop", precio: 120 },
+            { nombre: "Audífonos", precio: 50 }
         ];
 
-        let masDe8 = 0; // contador básico
+        let totalDescuento = 0; // acumulador básico
 
-        for (let i = 0; i < registros.length; i++) {
-            let horas = registros[i].salida - registros[i].entrada;
+        for (let i = 0; i < productos.length; i++) {
+            let precio = productos[i].precio;
 
-            if (horas > 8) {
-                masDe8 = masDe8 + 1; // sumar uno
+            // si el precio es mayor a 100, aplicar 10% de descuento
+            if (precio > 100) {
+                precio = precio * 0.9;
             }
+
+            totalDescuento = totalDescuento + precio; // sumar al total
         }
 
-        console.log("Empleados que trabajaron más de 8 horas:", masDe8);
+        console.log("Total con descuento:", totalDescuento);
 
 
     </script>
