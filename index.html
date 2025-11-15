@@ -301,7 +301,7 @@
 
         // console.log("Total con descuento:", totalDescuento);
 
-// //------------------------------------------------------------------------//
+        // //------------------------------------------------------------------------//
         // // 14.	Un vendedor de boletos tiene que contar cuántos boletos ha vendido
         // //  en diferentes tipos de categorías: adulto, niño y senior. El precio de
         // //  los boletos varía según la categoría. Ayúdanos a calcular el total
@@ -313,22 +313,44 @@
         // // ];
 
         // // Respuesta:
-        let boletos = [
-            { categoria: "adulto", cantidad: 10, precio: 20 },
-            { categoria: "niño", cantidad: 15, precio: 10 },
-            { categoria: "senior", cantidad: 5, precio: 15 }
-        ];
+        // let boletos = [
+        //     { categoria: "adulto", cantidad: 10, precio: 20 },
+        //     { categoria: "niño", cantidad: 15, precio: 10 },
+        //     { categoria: "senior", cantidad: 5, precio: 15 }
+        // ];
 
-        for (let i = 0; i < boletos.length; i++) {
-            let categoria = boletos[i].categoria;
-            let cantidad = boletos[i].cantidad;
-            let precio = boletos[i].precio;
+        // for (let i = 0; i < boletos.length; i++) {
+        //     let categoria = boletos[i].categoria;
+        //     let cantidad = boletos[i].cantidad;
+        //     let precio = boletos[i].precio;
 
-            let total = cantidad * precio;
+        //     let total = cantidad * precio;
 
-            console.log(categoria + ": $" + total);
+        //     console.log(categoria + ": $" + total);
+        // }
+
+        // //------------------------------------------------------------------------//
+        // // 15.	En un texto largo, se necesita contar cuántas palabras tienen más
+        // //  de 4 letras.
+        // // "Esta es una frase de ejemplo que contiene algunas palabras largas"
+
+        // // Respuesta:
+        let texto = "Esta es una frase de ejemplo que contiene algunas palabras largas";
+
+        let cantidad = 0;
+        let letras = 0;
+
+        for (let i = 0; i < texto.length; i++) {
+            if (texto[i] !== " ") letras++;
+            else {
+                if (letras > 4) cantidad++;
+                letras = 0;
+            }
         }
 
+        if (letras > 4) cantidad++;
+
+        console.log("Palabras con más de 4 letras:", cantidad);
 
     </script>
 </body>
