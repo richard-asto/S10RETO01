@@ -47,28 +47,44 @@
         // // 3.	Dado un arreglo, invierte el orden de sus elementos
 
         // // Respuesta:
-        let arr = [];
-        let valor;
+        // let arr = [];
+        // let valor;
 
-        // Pedir elementos al usuario
-        valor = prompt("Ingresa un valor para el arreglo (vacío para terminar):");
+        // // Pedir elementos al usuario
+        // valor = prompt("Ingresa un valor para el arreglo (vacío para terminar):");
 
-        while (valor !== "") {
-            arr.push(valor);
-            valor = prompt("Ingresa otro valor (vacío para terminar):");
+        // while (valor !== "") {
+        //     arr.push(valor);
+        //     valor = prompt("Ingresa otro valor (vacío para terminar):");
+        // }
+
+        // // Invertir el arreglo sin usar reverse()
+        // let invertido = [];
+
+        // for (let i = arr.length - 1; i >= 0; i--) {
+        //     invertido.push(arr[i]);
+        // }
+
+        // console.log("Arreglo original:", arr);
+        // console.log("Arreglo invertido:", invertido);
+
+        // //------------------------------------------------------------------------//
+        // // 4.	Dada una cadena de texto, cuenta cuántas vocales contiene.
+
+        // // Respuesta:
+        let texto = prompt("Ingresa un texto para contar sus vocales:");
+        let vocales = "aeiouAEIOU";
+        let contador = 0;
+
+        for (let letra of texto) {
+            if (vocales.includes(letra)) {
+                contador++;
+            }
         }
+        console.log("texto ingresado:", texto);
+        console.log("Cantidad de vocales:", contador);
 
-        // Invertir el arreglo sin usar reverse()
-        let invertido = [];
-
-        for (let i = arr.length - 1; i >= 0; i--) {
-            invertido.push(arr[i]);
-        }
-
-        console.log("Arreglo original:", arr);
-        console.log("Arreglo invertido:", invertido);
-
-
+        
     </script>
 </body>
 
