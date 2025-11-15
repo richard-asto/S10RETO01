@@ -15,14 +15,33 @@
         // //  la lista de números capturados en pantalla o en la consola.
 
         // // Respuesta:
-        let numeros = [];
-        let num = Number(prompt("Ingresa un número (0 para terminar): "));
+        // let numeros = [];
+        // let num = Number(prompt("Ingresa un número (0 para terminar): "));
 
-        while (num !== 0) {
-            if (!isNaN(num)) numeros.push(num);
-            num = Number(prompt("Ingresa un número (0 para terminar): "));
+        // while (num !== 0) {
+        //     if (!isNaN(num)) numeros.push(num);
+        //     num = Number(prompt("Ingresa un número (0 para terminar): "));
+        // }
+        // console.log("Números capturados:", numeros);
+
+        // //------------------------------------------------------------------------//
+        // // 2.	Crea un programa que solicite al usuario letras o palabras, si
+        // //  es así guardar el resultado. Para terminar de preguntar al usuario no
+        // //  debe escribir valor alguno. Al terminar de capturar, mostrar en pantalla
+        // //  la concatenación de todas las palabras capturadas.
+
+        // // Respuesta:
+        let palabras = [];
+        let palabra = prompt("Ingresa una palabra (enter para terminar):");
+
+        while (palabra !== "") {
+            palabras.push(palabra);
+            palabra = prompt("Ingresa otra palabra (enter para terminar):");
         }
-        console.log("Números capturados:", numeros);
+
+        console.log("Concatenación:", palabras.join(" "));
+
+
     </script>
 </body>
 </html>
