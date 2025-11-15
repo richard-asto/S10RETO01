@@ -144,18 +144,50 @@
         // //  de texto.
 
         // // Respuesta:
-        let texto = prompt("Ingresa un texto:");
-        let caracter = prompt("Ingresa el caracter a contar:");
+        // let texto = prompt("Ingresa un texto:");
+        // let caracter = prompt("Ingresa el caracter a contar:");
 
-        let contador = 0;
+        // let contador = 0;
 
-        for (let letra of texto) {
-            if (letra === caracter) {
-                contador++;
-            }
+        // for (let letra of texto) {
+        //     if (letra === caracter) {
+        //         contador++;
+        //     }
+        // }
+
+        // console.log(`El caracter '${caracter}' aparece ${contador} veces en el texto. "${texto}"`);
+
+        // //------------------------------------------------------------------------//
+        // // 9.	Un cine vende boletos por diferentes precios dependiendo de la edad.
+        // //  Los precios son los siguientes:
+        // // • Niños (menores de 12 años): $5
+        // // • Adultos (12 a 60 años): $10
+        // // • Mayores (más de 60 años): $7
+        // // El cine ha vendido varios boletos. ¿Cuánto dinero ha ganado en total?
+        // // let boletos = [
+        // //     { edad: 8, precio: 5 },
+        // //     { edad: 15, precio: 10 },
+        // //     { edad: 70, precio: 7 },
+        // //     { edad: 12, precio: 10 },
+        // //     { edad: 5, precio: 5 }
+        // // ];
+
+        // // Respuesta:
+        let boletos = [
+            { edad: 8, precio: 5 },
+            { edad: 15, precio: 10 },
+            { edad: 70, precio: 7 },
+            { edad: 12, precio: 10 },
+            { edad: 5, precio: 5 }
+        ];
+        let total = 0;
+
+        for (let i = 0; i < boletos.length; i++) {
+            total += boletos[i].precio;
         }
 
-        console.log(`El caracter '${caracter}' aparece ${contador} veces en el texto. "${texto}"`);
+        console.log("Total ganado:", total);
+
 
     </script>
 </body>
