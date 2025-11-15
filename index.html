@@ -130,15 +130,32 @@
         // // 7.	Dado un número n, calcula su factorial (es decir, n!).
 
         // // Respuesta:
-        let n = Number(prompt("Ingresa un número para calcular su factorial:"));
-        let res = 1;
+        // let n = Number(prompt("Ingresa un número para calcular su factorial:"));
+        // let res = 1;
 
-        for (let i = 1; i <= n; i++) {
-            res = res * i;  // multiplicación acumulada
+        // for (let i = 1; i <= n; i++) {
+        //     res = res * i;  // multiplicación acumulada
+        // }
+
+        // console.log("El factorial de " + n + " es: " + res);
+
+        // //------------------------------------------------------------------------//
+        // // 8.	Cuenta cuántas veces aparece un carácter específico en una cadena
+        // //  de texto.
+
+        // // Respuesta:
+        let texto = prompt("Ingresa un texto:");
+        let caracter = prompt("Ingresa el caracter a contar:");
+
+        let contador = 0;
+
+        for (let letra of texto) {
+            if (letra === caracter) {
+                contador++;
+            }
         }
 
-        console.log("El factorial de " + n + " es: " + res);
-
+        console.log(`El caracter '${caracter}' aparece ${contador} veces en el texto. "${texto}"`);
 
     </script>
 </body>
