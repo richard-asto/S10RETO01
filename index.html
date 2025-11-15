@@ -72,19 +72,45 @@
         // // 4.	Dada una cadena de texto, cuenta cuántas vocales contiene.
 
         // // Respuesta:
-        let texto = prompt("Ingresa un texto para contar sus vocales:");
-        let vocales = "aeiouAEIOU";
-        let contador = 0;
+        // let texto = prompt("Ingresa un texto para contar sus vocales:");
+        // let vocales = "aeiouAEIOU";
+        // let contador = 0;
 
-        for (let letra of texto) {
-            if (vocales.includes(letra)) {
-                contador++;
+        // for (let letra of texto) {
+        //     if (vocales.includes(letra)) {
+        //         contador++;
+        //     }
+        // }
+        // console.log("texto ingresado:", texto);
+        // console.log("Cantidad de vocales:", contador);
+
+        // //------------------------------------------------------------------------//
+        // // 5.	Dado un arreglo de números, encuentra el índice del número menor.
+
+        // // Respuesta:
+        let numeros2 = [];
+        let valor = prompt("Ingresa un número (vacío para terminar):");
+
+        // Capturar los elementos del arreglo
+        while (valor !== "") {
+            numeros2.push(Number(valor));
+            valor = prompt("Ingresa otro número (vacío para terminar):");
+        }
+
+        let menor = numeros2[0];
+        let indiceMenor = 0;
+
+        for (let i = 1; i < numeros2.length; i++) {
+            if (numeros2[i] < menor) {
+                menor = numeros2[i];
+                indiceMenor = i;
             }
         }
-        console.log("texto ingresado:", texto);
-        console.log("Cantidad de vocales:", contador);
 
-        
+        console.log("Arreglo ingresado:", numeros2);
+        console.log("Número menor:", menor);
+        console.log("Índice del número menor:", indiceMenor);
+
     </script>
 </body>
 
