@@ -8,7 +8,21 @@
 <body>
     <h1>⚡ Reto Semana 10 ⚡</h1>
     <script>
+        // //------------------------------------------------------------------------//
+        // // 1.	Crea un programa que solicite al usuario números, si lo que este
+        // //  introduce es un número, guardarlo en un arreglo. Para terminar de
+        // //  preguntar al usuario debe ingresar el número 0. Finalmente mostrar
+        // //  la lista de números capturados en pantalla o en la consola.
 
+        // // Respuesta:
+        let numeros = [];
+        let num = Number(prompt("Ingresa un número (0 para terminar): "));
+
+        while (num !== 0) {
+            if (!isNaN(num)) numeros.push(num);
+            num = Number(prompt("Ingresa un número (0 para terminar): "));
+        }
+        console.log("Números capturados:", numeros);
     </script>
 </body>
 </html>
